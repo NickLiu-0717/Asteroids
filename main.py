@@ -17,8 +17,8 @@ def main():
                 return
         screen.fill((0,0,0))
         dt = clock.tick(60) /1000
-        # player.draw(screen)
-        pygame.draw.polygon(screen, (255, 255, 255), [(640, 380), (653, 340), (626, 340)], 2)
+        player.draw(screen)
+        player.update(dt)
         pygame.display.flip()
 
 if __name__=="__main__":
